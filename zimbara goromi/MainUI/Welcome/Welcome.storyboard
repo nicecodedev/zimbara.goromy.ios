@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Controller-->
+        <scene sceneID="YlH-35-V9J">
+            <objects>
+                <viewController storyboardIdentifier="welcome.welcome.controller" id="UfJ-1E-Jz4" customClass="WelcomeController" customModule="zimbara_goromi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YQ3-Td-UcE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Mhw-Du-Eha">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJv-ZM-NHC" customClass="SymbolsGridView" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="10" y="30" width="300" height="528"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zimbara welcome image" translatesAutoresizingMaskIntoConstraints="NO" id="CsH-ct-2EU">
+                                <rect key="frame" x="60" y="174" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BHM-1i-OlC"/>
+                                    <constraint firstAttribute="height" constant="200" id="tUa-oU-X4T"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0P-1V-WdQ" customClass="WelcomeLogoView" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="20" y="244" width="280" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wJv-ZM-NHC" firstAttribute="top" secondItem="do5-GS-Tfp" secondAttribute="top" constant="10" id="3DK-jr-b6X"/>
+                            <constraint firstItem="do5-GS-Tfp" firstAttribute="bottom" secondItem="wJv-ZM-NHC" secondAttribute="bottom" constant="10" id="8OO-v2-xbg"/>
+                            <constraint firstItem="CsH-ct-2EU" firstAttribute="centerX" secondItem="do5-GS-Tfp" secondAttribute="centerX" id="AGF-OB-NK5"/>
+                            <constraint firstItem="do5-GS-Tfp" firstAttribute="trailing" secondItem="Mhw-Du-Eha" secondAttribute="trailing" id="DQe-MN-Oxk"/>
+                            <constraint firstAttribute="bottom" secondItem="Mhw-Du-Eha" secondAttribute="bottom" id="EXD-2c-ujG"/>
+                            <constraint firstItem="Mhw-Du-Eha" firstAttribute="leading" secondItem="do5-GS-Tfp" secondAttribute="leading" id="F24-YU-Ewv"/>
+                            <constraint firstItem="wJv-ZM-NHC" firstAttribute="leading" secondItem="do5-GS-Tfp" secondAttribute="leading" constant="10" id="G8r-X0-5cf"/>
+                            <constraint firstItem="CsH-ct-2EU" firstAttribute="centerY" secondItem="do5-GS-Tfp" secondAttribute="centerY" constant="-20" id="GfP-PA-jJL"/>
+                            <constraint firstItem="m0P-1V-WdQ" firstAttribute="centerY" secondItem="YQ3-Td-UcE" secondAttribute="centerY" constant="10" id="Jxe-Su-6E3"/>
+                            <constraint firstItem="do5-GS-Tfp" firstAttribute="trailing" secondItem="wJv-ZM-NHC" secondAttribute="trailing" constant="10" id="Y8B-Kn-3ld"/>
+                            <constraint firstItem="Mhw-Du-Eha" firstAttribute="top" secondItem="YQ3-Td-UcE" secondAttribute="top" id="aq5-e5-VpZ"/>
+                            <constraint firstItem="m0P-1V-WdQ" firstAttribute="centerX" secondItem="do5-GS-Tfp" secondAttribute="centerX" id="jju-Wp-C9J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="do5-GS-Tfp"/>
+                    </view>
+                    <connections>
+                        <outlet property="gridView" destination="wJv-ZM-NHC" id="izq-k2-PX3"/>
+                        <outlet property="logoImageView" destination="CsH-ct-2EU" id="pto-xD-One"/>
+                        <outlet property="logoView" destination="m0P-1V-WdQ" id="fUg-ca-v51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJM-6t-0aB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="812"/>
+        <image name="zimbara welcome image" width="159" height="163"/>
+    </resources>
+</document>

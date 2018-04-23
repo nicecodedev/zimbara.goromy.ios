@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Controller-->
+        <scene sceneID="Ntk-Oq-ado">
+            <objects>
+                <viewController id="VFy-93-iTU" customClass="SettingsController" customModule="zimbara_goromi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wzf-vb-2uU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hja-wq-tuH">
+                                <rect key="frame" x="15" y="74" width="375" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Настройки">
+                                        <attributes>
+                                            <color key="NSColor" red="0.15294117647058825" green="0.23921568627450979" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="PTSans-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX3-de-enH" customClass="MoreButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="13" y="105" width="349" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MS8-Tf-HhA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Выбор языка"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="info" value="Русский"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPg-JL-kE7">
+                                <rect key="frame" x="15" y="185" width="345" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="УВЕДОМЛЕНИЯ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1529411765" green="0.23921568630000001" blue="0.32156862749999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="PingFangHK-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifP-VD-SFk" customClass="SwitchButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="13" y="207" width="349" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5vJ-rY-ACh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Звук"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eyh-rT-eBN" customClass="SwitchButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="13" y="272" width="349" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Sjh-jk-3LA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Push-уведомления"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-1y-btx">
+                                <rect key="frame" x="15" y="337" width="345" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="При включении Вы будете получать push-уведомления о новых книгах или обновлениях.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1529411765" green="0.23921568630000001" blue="0.32156862749999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="PingFangHK-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="PingFangHK-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="15" maximumLineHeight="15" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ifP-VD-SFk" firstAttribute="leading" secondItem="PV7-tB-fBR" secondAttribute="leading" constant="13" id="0kd-cu-dfN"/>
+                            <constraint firstItem="GX3-de-enH" firstAttribute="top" secondItem="hja-wq-tuH" secondAttribute="bottom" constant="10" id="4ZU-ew-jz0"/>
+                            <constraint firstItem="GX3-de-enH" firstAttribute="leading" secondItem="Wzf-vb-2uU" secondAttribute="leading" constant="13" id="4wF-Cw-KHh"/>
+                            <constraint firstItem="ibc-1y-btx" firstAttribute="top" secondItem="Eyh-rT-eBN" secondAttribute="bottom" constant="5" id="8hB-7R-uUa"/>
+                            <constraint firstItem="hja-wq-tuH" firstAttribute="top" secondItem="PV7-tB-fBR" secondAttribute="top" constant="10" id="9gy-0i-ljB"/>
+                            <constraint firstItem="PV7-tB-fBR" firstAttribute="trailing" secondItem="dPg-JL-kE7" secondAttribute="trailing" constant="15" id="A5Y-7S-VZy"/>
+                            <constraint firstItem="dPg-JL-kE7" firstAttribute="top" secondItem="GX3-de-enH" secondAttribute="bottom" constant="20" id="Qqw-HD-ttw"/>
+                            <constraint firstItem="hja-wq-tuH" firstAttribute="leading" secondItem="PV7-tB-fBR" secondAttribute="leading" constant="15" id="Z4v-1Y-F5e"/>
+                            <constraint firstItem="Eyh-rT-eBN" firstAttribute="top" secondItem="ifP-VD-SFk" secondAttribute="bottom" constant="5" id="cMt-yW-sbt"/>
+                            <constraint firstItem="ibc-1y-btx" firstAttribute="leading" secondItem="PV7-tB-fBR" secondAttribute="leading" constant="15" id="gCD-vA-3fu"/>
+                            <constraint firstItem="Eyh-rT-eBN" firstAttribute="leading" secondItem="PV7-tB-fBR" secondAttribute="leading" constant="13" id="m9h-BA-CY5"/>
+                            <constraint firstItem="PV7-tB-fBR" firstAttribute="trailing" secondItem="GX3-de-enH" secondAttribute="trailing" constant="13" id="pMq-da-MLD"/>
+                            <constraint firstItem="PV7-tB-fBR" firstAttribute="trailing" secondItem="ibc-1y-btx" secondAttribute="trailing" constant="15" id="q3f-W8-V8R"/>
+                            <constraint firstItem="hja-wq-tuH" firstAttribute="trailing" secondItem="PV7-tB-fBR" secondAttribute="trailing" constant="15" id="qSV-F7-nC3"/>
+                            <constraint firstItem="dPg-JL-kE7" firstAttribute="leading" secondItem="PV7-tB-fBR" secondAttribute="leading" constant="15" id="rjq-ti-bu2"/>
+                            <constraint firstItem="PV7-tB-fBR" firstAttribute="trailing" secondItem="Eyh-rT-eBN" secondAttribute="trailing" constant="13" id="rkZ-Ye-KQL"/>
+                            <constraint firstItem="ifP-VD-SFk" firstAttribute="top" secondItem="dPg-JL-kE7" secondAttribute="bottom" constant="5" id="tDE-m2-EVM"/>
+                            <constraint firstItem="PV7-tB-fBR" firstAttribute="trailing" secondItem="ifP-VD-SFk" secondAttribute="trailing" constant="13" id="yJc-gZ-Gcr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PV7-tB-fBR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ojc-6b-jEe">
+                        <barButtonItem key="leftBarButtonItem" image="menu_icon" id="83B-Xl-llg">
+                            <connections>
+                                <action selector="openMenu:" destination="VFy-93-iTU" id="dHH-ab-TaN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Zm-ut-2Vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="187.55622188905548"/>
+        </scene>
+        <!--Settings Navigation Controller-->
+        <scene sceneID="lwu-Bg-m3g">
+            <objects>
+                <navigationController storyboardIdentifier="settings.navigation.controller" automaticallyAdjustsScrollViewInsets="NO" id="WUF-2I-9Vg" customClass="SettingsNavigationController" customModule="zimbara_goromi" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dF7-Li-KUo" customClass="NavigationBar" customModule="zimbara_goromi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VFy-93-iTU" kind="relationship" relationship="rootViewController" id="hol-2w-tp4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccy-y8-eTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-814" y="188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_icon" width="24" height="21"/>
+    </resources>
+</document>

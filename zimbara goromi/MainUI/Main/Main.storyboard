@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Menu Container Controller-->
+        <scene sceneID="apC-xZ-fZ4">
+            <objects>
+                <viewController storyboardIdentifier="main.menu.container.controller" id="DmO-41-Jgk" customClass="MainMenuContainerController" customModule="zimbara_goromi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EAe-SQ-QAI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kQd-9t-5sX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YH-MH-VZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="-46"/>
+        </scene>
+        <!--Main Menu Controller-->
+        <scene sceneID="v8L-iK-wTE">
+            <objects>
+                <viewController storyboardIdentifier="main.menu.controller" id="3DI-r0-j68" customClass="MainMenuController" customModule="zimbara_goromi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ea-j2-RJG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dj3-U9-ViP">
+                                <rect key="frame" x="25" y="40" width="244" height="66"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="szt-XT-e5f">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="szt-XT-e5f" secondAttribute="height" multiplier="1:1" id="gQB-YG-Yfs"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpX-7n-FIO">
+                                        <rect key="frame" x="86" y="0.0" width="158" height="66"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Профиль">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="20" name="PTSans-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="szt-XT-e5f" firstAttribute="leading" secondItem="dj3-U9-ViP" secondAttribute="leading" id="27G-w2-zcH"/>
+                                    <constraint firstItem="fpX-7n-FIO" firstAttribute="top" secondItem="dj3-U9-ViP" secondAttribute="top" id="4wK-81-PKJ"/>
+                                    <constraint firstItem="szt-XT-e5f" firstAttribute="top" secondItem="dj3-U9-ViP" secondAttribute="top" id="LjR-x8-Pag"/>
+                                    <constraint firstAttribute="bottom" secondItem="szt-XT-e5f" secondAttribute="bottom" id="NX4-68-8KK"/>
+                                    <constraint firstAttribute="bottom" secondItem="fpX-7n-FIO" secondAttribute="bottom" id="RBW-MD-21C"/>
+                                    <constraint firstItem="fpX-7n-FIO" firstAttribute="leading" secondItem="szt-XT-e5f" secondAttribute="trailing" constant="20" id="bjN-6S-IoU"/>
+                                    <constraint firstAttribute="height" constant="66" id="ddN-ez-TOE"/>
+                                    <constraint firstAttribute="trailing" secondItem="fpX-7n-FIO" secondAttribute="trailing" id="ttH-eM-xTV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9TG-pd-vIa" customClass="LeftImageButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="25" y="136" width="244" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="M3K-5B-mly"/>
+                                </constraints>
+                                <state key="normal" image="book_icon">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Магазин">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="PTSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="openBooks:" destination="3DI-r0-j68" eventType="touchUpInside" id="9Qe-eL-GfK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K13-C2-OWa">
+                                <rect key="frame" x="25" y="196" width="244" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="NIC-ln-MIh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CTF-8X-exG" customClass="LeftImageButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="25" y="197" width="244" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Iws-YE-3lV"/>
+                                </constraints>
+                                <state key="normal" image="info_icon">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="О проекте">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="PTSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="openAbout:" destination="3DI-r0-j68" eventType="touchUpInside" id="SQY-X3-sIJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="438-Yl-QvY">
+                                <rect key="frame" x="25" y="257" width="244" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="LFQ-mB-nEa"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-JH-1am" customClass="LeftImageButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="25" y="258" width="244" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MJm-eM-oGG"/>
+                                </constraints>
+                                <state key="normal" image="settings_icon">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Настройки">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="PTSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="openSettings:" destination="3DI-r0-j68" eventType="touchUpInside" id="V9O-z4-yXP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gV-uh-5Dw">
+                                <rect key="frame" x="25" y="318" width="244" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MFF-QG-EDJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hg-ZW-b7a">
+                                <rect key="frame" x="25" y="606" width="244" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6tM-U6-jBf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zc1-GZ-Yeu" customClass="LeftImageButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="25" y="607" width="244" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4HP-S0-hXv"/>
+                                </constraints>
+                                <state key="normal" image="support_icon">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Поддержка">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="PTSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="openSupport:" destination="3DI-r0-j68" eventType="touchUpInside" id="LcP-eo-8yX"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGc-iq-cZP">
+                                <rect key="frame" x="25" y="135" width="244" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="SIX-Pp-wAS"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0u-83-B9T" customClass="LeftImageButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="25" y="75" width="244" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9pg-Fv-mRN"/>
+                                </constraints>
+                                <state key="normal" image="sign_in_icon">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Войти">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="PTSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="openSignIn:" destination="3DI-r0-j68" eventType="touchUpInside" id="Hvl-TB-NOH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9TG-pd-vIa" firstAttribute="top" secondItem="eGc-iq-cZP" secondAttribute="bottom" id="0lo-NT-Ceq"/>
+                            <constraint firstItem="Zc1-GZ-Yeu" firstAttribute="leading" secondItem="Ukb-ZR-RbV" secondAttribute="leading" constant="25" id="2DC-V8-cmq"/>
+                            <constraint firstItem="Zc1-GZ-Yeu" firstAttribute="top" secondItem="4Hg-ZW-b7a" secondAttribute="bottom" id="2EC-T0-N7I"/>
+                            <constraint firstItem="CTF-8X-exG" firstAttribute="top" secondItem="K13-C2-OWa" secondAttribute="bottom" id="5Dg-1A-Rmi"/>
+                            <constraint firstItem="dj3-U9-ViP" firstAttribute="leading" secondItem="Ukb-ZR-RbV" secondAttribute="leading" constant="25" id="6mw-Zp-ZgR"/>
+                            <constraint firstItem="eGc-iq-cZP" firstAttribute="top" secondItem="k0u-83-B9T" secondAttribute="bottom" id="ADo-la-Rh3"/>
+                            <constraint firstItem="4Hg-ZW-b7a" firstAttribute="width" secondItem="Zc1-GZ-Yeu" secondAttribute="width" id="AVG-CT-8dr"/>
+                            <constraint firstItem="BKJ-JH-1am" firstAttribute="width" secondItem="CTF-8X-exG" secondAttribute="width" id="Ctu-RA-Ouo"/>
+                            <constraint firstItem="dj3-U9-ViP" firstAttribute="width" secondItem="9ea-j2-RJG" secondAttribute="width" multiplier="0.65" id="E1w-oW-NKb"/>
+                            <constraint firstItem="9TG-pd-vIa" firstAttribute="top" secondItem="dj3-U9-ViP" secondAttribute="bottom" constant="30" id="EC0-xW-xUn"/>
+                            <constraint firstItem="9TG-pd-vIa" firstAttribute="leading" secondItem="Ukb-ZR-RbV" secondAttribute="leading" constant="25" id="EJs-yJ-euo"/>
+                            <constraint firstItem="K13-C2-OWa" firstAttribute="width" secondItem="9TG-pd-vIa" secondAttribute="width" id="FIT-EI-iN2"/>
+                            <constraint firstItem="438-Yl-QvY" firstAttribute="width" secondItem="CTF-8X-exG" secondAttribute="width" id="FvD-Q7-8mr"/>
+                            <constraint firstItem="2gV-uh-5Dw" firstAttribute="leading" secondItem="9ea-j2-RJG" secondAttribute="leading" constant="25" id="Kke-cS-MSS"/>
+                            <constraint firstItem="eGc-iq-cZP" firstAttribute="leading" secondItem="9ea-j2-RJG" secondAttribute="leading" constant="25" id="MNi-HJ-oUA"/>
+                            <constraint firstItem="k0u-83-B9T" firstAttribute="width" secondItem="9TG-pd-vIa" secondAttribute="width" id="Qq7-mP-eYl"/>
+                            <constraint firstItem="9TG-pd-vIa" firstAttribute="width" secondItem="dj3-U9-ViP" secondAttribute="width" id="S7x-UN-24h"/>
+                            <constraint firstItem="438-Yl-QvY" firstAttribute="top" secondItem="CTF-8X-exG" secondAttribute="bottom" id="SVG-vT-NCa"/>
+                            <constraint firstItem="2gV-uh-5Dw" firstAttribute="top" secondItem="BKJ-JH-1am" secondAttribute="bottom" id="UIS-LX-5CR"/>
+                            <constraint firstItem="Ukb-ZR-RbV" firstAttribute="bottom" secondItem="Zc1-GZ-Yeu" secondAttribute="bottom" id="Yrn-Ee-g1H"/>
+                            <constraint firstItem="4Hg-ZW-b7a" firstAttribute="leading" secondItem="9ea-j2-RJG" secondAttribute="leading" constant="25" id="ZNP-sI-yWu"/>
+                            <constraint firstItem="dj3-U9-ViP" firstAttribute="top" secondItem="Ukb-ZR-RbV" secondAttribute="top" constant="20" id="aE4-LI-5r2"/>
+                            <constraint firstItem="K13-C2-OWa" firstAttribute="top" secondItem="9TG-pd-vIa" secondAttribute="bottom" id="cNe-pb-B3A"/>
+                            <constraint firstItem="BKJ-JH-1am" firstAttribute="leading" secondItem="Ukb-ZR-RbV" secondAttribute="leading" constant="25" id="geJ-MO-tDL"/>
+                            <constraint firstItem="438-Yl-QvY" firstAttribute="leading" secondItem="9ea-j2-RJG" secondAttribute="leading" constant="25" id="ggt-u9-iIX"/>
+                            <constraint firstItem="CTF-8X-exG" firstAttribute="width" secondItem="9TG-pd-vIa" secondAttribute="width" id="gq7-jY-qrg"/>
+                            <constraint firstItem="BKJ-JH-1am" firstAttribute="top" secondItem="438-Yl-QvY" secondAttribute="bottom" id="hcH-uh-NpD"/>
+                            <constraint firstItem="2gV-uh-5Dw" firstAttribute="width" secondItem="BKJ-JH-1am" secondAttribute="width" id="k4j-3J-DSb"/>
+                            <constraint firstItem="Zc1-GZ-Yeu" firstAttribute="width" secondItem="BKJ-JH-1am" secondAttribute="width" id="mku-Ue-6ks"/>
+                            <constraint firstItem="CTF-8X-exG" firstAttribute="leading" secondItem="Ukb-ZR-RbV" secondAttribute="leading" constant="25" id="oZF-0v-jjg"/>
+                            <constraint firstItem="eGc-iq-cZP" firstAttribute="width" secondItem="9TG-pd-vIa" secondAttribute="width" id="wTe-aX-gTe"/>
+                            <constraint firstItem="K13-C2-OWa" firstAttribute="leading" secondItem="Ukb-ZR-RbV" secondAttribute="leading" constant="25" id="wvn-3x-qhv"/>
+                            <constraint firstItem="k0u-83-B9T" firstAttribute="leading" secondItem="Ukb-ZR-RbV" secondAttribute="leading" constant="25" id="xjt-Sq-J6t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ukb-ZR-RbV"/>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="k0u-83-B9T" id="9Wv-DH-Lyl"/>
+                        <outlet property="userView" destination="dj3-U9-ViP" id="4CS-nw-SFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAH-Jp-jNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="-46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book_icon" width="17" height="22"/>
+        <image name="empty_avatar" width="66" height="67"/>
+        <image name="info_icon" width="22" height="22"/>
+        <image name="settings_icon" width="22" height="22"/>
+        <image name="sign_in_icon" width="22" height="22"/>
+        <image name="support_icon" width="22" height="22"/>
+    </resources>
+</document>

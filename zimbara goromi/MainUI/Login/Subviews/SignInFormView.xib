@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInFormView" customModule="zimbara_goromi" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="7oY-x4-USs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCA-Rs-ox6" customClass="GradientButton" customModule="zimbara_goromi" customModuleProvider="target">
+                    <rect key="frame" x="15" y="235" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8aJ-15-Yy5"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Войти">
+                                <attributes>
+                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="16" name="PTSans-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" red="0.21568627450980393" green="0.85098039215686272" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="0.52941176470588236" green="0.090196078431372548" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                            <point key="value" x="0.0" y="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                            <point key="value" x="1" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="KxN-rv-bTL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soD-4u-AXR">
+                    <rect key="frame" x="15" y="10" width="320" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="jJf-pD-vm6"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Войти">
+                            <attributes>
+                                <font key="NSFont" size="16" name="PTSans-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-hU-Fgu" customClass="IconTextField" customModule="zimbara_goromi" customModuleProvider="target">
+                    <rect key="frame" x="15" y="145" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="JUb-xx-idA"/>
+                    </constraints>
+                    <attributedString key="attributedText"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="password_icon"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.15294117647058825" green="0.23921568627450979" blue="0.32156862745098036" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DF5-vz-rNX" customClass="IconTextField" customModule="zimbara_goromi" customModuleProvider="target">
+                    <rect key="frame" x="15" y="85" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Xpy-bR-pm4"/>
+                    </constraints>
+                    <attributedString key="attributedText"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.15294117647058825" green="0.23921568627450979" blue="0.32156862745098036" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="mail_icon"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZCA-Rs-ox6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="30e-jq-q7c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gmB-hU-Fgu" secondAttribute="trailing" constant="15" id="B64-ik-o7y"/>
+                <constraint firstItem="soD-4u-AXR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="GxD-iW-WdP"/>
+                <constraint firstItem="soD-4u-AXR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="LnD-ma-Hno"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="soD-4u-AXR" secondAttribute="trailing" constant="15" id="NVa-qD-5Vu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZCA-Rs-ox6" secondAttribute="trailing" constant="15" id="QUf-OW-x6p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DF5-vz-rNX" secondAttribute="trailing" constant="15" id="ZdJ-Q4-1b4"/>
+                <constraint firstItem="DF5-vz-rNX" firstAttribute="top" secondItem="soD-4u-AXR" secondAttribute="bottom" constant="10" id="bp6-JT-scv"/>
+                <constraint firstItem="gmB-hU-Fgu" firstAttribute="top" secondItem="DF5-vz-rNX" secondAttribute="bottom" constant="15" id="bvN-Gb-MeD"/>
+                <constraint firstItem="DF5-vz-rNX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="e45-ei-9cz"/>
+                <constraint firstItem="gmB-hU-Fgu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="eMB-ye-H11"/>
+                <constraint firstItem="ZCA-Rs-ox6" firstAttribute="top" secondItem="gmB-hU-Fgu" secondAttribute="bottom" constant="45" id="jJ6-1b-YUA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZCA-Rs-ox6" secondAttribute="bottom" constant="15" id="y7F-hz-tYD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mail_icon" width="15" height="12"/>
+        <image name="password_icon" width="16" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Sign In Controller-->
+        <scene sceneID="LBH-dR-lh5">
+            <objects>
+                <viewController storyboardIdentifier="login.sign.in.controller" id="ohI-62-Nbe" customClass="LoginSignInController" customModule="zimbara_goromi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fL0-u3-2tM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lko-Ro-bWn">
+                                <rect key="frame" x="15" y="607" width="345" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZNY-7b-SLL"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Зарегистрироваться">
+                                            <attributes>
+                                                <color key="NSColor" red="0.15294117647058825" green="0.23921568627450979" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="16" name="PTSans-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Arq-f5-psC">
+                                <rect key="frame" x="15" y="549" width="345" height="50"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.30588235294117649" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DMu-hA-2kd"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Вход через Facebook">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="16" name="PTSans-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEm-qS-Kcb" customClass="GradientButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="15" y="491" width="345" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WcQ-mR-QBe"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Вход через Instagram">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="16" name="PTSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.8784313725490196" green="0.60784313725490191" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                        <point key="value" x="0.0" y="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.4392156862745098" green="0.14117647058823529" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                        <point key="value" x="1" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="0.7803921568627451" green="0.29803921568627451" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thirdColor">
+                                        <color key="value" red="0.76078431372549016" green="0.098039215686274508" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="secondPoint">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="thirdPoint">
+                                        <point key="value" x="0.59999999999999998" y="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thirdLocation">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="secondLocation">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krb-05-yOO" customClass="ColoredButton" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="320" y="30" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QWq-xG-qh0"/>
+                                    <constraint firstAttribute="width" constant="40" id="i3u-7g-sQc"/>
+                                </constraints>
+                                <color key="tintColor" red="0.43921568630000002" green="0.14117647059999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.43921568630000002" green="0.14117647059999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="cancel_icon"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="ohI-62-Nbe" eventType="touchUpInside" id="tGW-t3-GrM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ii-zk-8y5" customClass="SignInFormView" customModule="zimbara_goromi" customModuleProvider="target">
+                                <rect key="frame" x="15" y="75" width="345" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lko-Ro-bWn" firstAttribute="top" secondItem="Arq-f5-psC" secondAttribute="bottom" constant="8" id="6fg-bt-M8G"/>
+                            <constraint firstItem="jKW-q6-iFm" firstAttribute="trailing" secondItem="Arq-f5-psC" secondAttribute="trailing" constant="15" id="8Iu-jZ-pKv"/>
+                            <constraint firstItem="3Ii-zk-8y5" firstAttribute="top" secondItem="Krb-05-yOO" secondAttribute="bottom" constant="5" id="9r3-nh-BK8"/>
+                            <constraint firstItem="jKW-q6-iFm" firstAttribute="trailing" secondItem="Krb-05-yOO" secondAttribute="trailing" constant="15" id="Hss-WR-0MA"/>
+                            <constraint firstItem="LEm-qS-Kcb" firstAttribute="leading" secondItem="jKW-q6-iFm" secondAttribute="leading" constant="15" id="McO-GK-Afv"/>
+                            <constraint firstItem="3Ii-zk-8y5" firstAttribute="leading" secondItem="jKW-q6-iFm" secondAttribute="leading" constant="15" id="NXD-Gy-KbJ"/>
+                            <constraint firstItem="jKW-q6-iFm" firstAttribute="bottom" secondItem="Lko-Ro-bWn" secondAttribute="bottom" constant="10" id="a0H-md-ytf"/>
+                            <constraint firstItem="Lko-Ro-bWn" firstAttribute="leading" secondItem="jKW-q6-iFm" secondAttribute="leading" constant="15" id="gO4-nE-Jgh"/>
+                            <constraint firstItem="jKW-q6-iFm" firstAttribute="trailing" secondItem="3Ii-zk-8y5" secondAttribute="trailing" constant="15" id="gVZ-uL-5dS"/>
+                            <constraint firstItem="Krb-05-yOO" firstAttribute="top" secondItem="jKW-q6-iFm" secondAttribute="top" constant="10" id="hml-Nw-ybg"/>
+                            <constraint firstItem="jKW-q6-iFm" firstAttribute="trailing" secondItem="Lko-Ro-bWn" secondAttribute="trailing" constant="15" id="pLN-W0-Wgl"/>
+                            <constraint firstItem="jKW-q6-iFm" firstAttribute="trailing" secondItem="LEm-qS-Kcb" secondAttribute="trailing" constant="15" id="qwx-Ph-wfH"/>
+                            <constraint firstItem="Arq-f5-psC" firstAttribute="top" secondItem="LEm-qS-Kcb" secondAttribute="bottom" constant="8" id="sqx-6A-Pw3"/>
+                            <constraint firstItem="Arq-f5-psC" firstAttribute="leading" secondItem="jKW-q6-iFm" secondAttribute="leading" constant="15" id="xQk-dt-FX5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jKW-q6-iFm"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="Krb-05-yOO" id="BeI-7K-NWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUi-4S-tLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="-8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancel_icon" width="18" height="18"/>
+    </resources>
+</document>
